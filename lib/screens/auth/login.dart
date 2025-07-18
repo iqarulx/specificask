@@ -5,12 +5,14 @@ import 'package:specificask/screens/ui/assets.dart';
 import 'package:specificask/services/others/db.dart';
 import 'package:specificask/utils/input_formats.dart';
 import '../../services/api/auth_service.dart';
+import '../../utils/route.dart';
 import '../../utils/validation.dart';
 import '../screens/index.dart';
 import '../ui/custom_field.dart';
 import '../ui/loading.dart';
 import '../ui/snackbar.dart';
 import '/theme/theme.dart';
+import 'request.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -27,7 +29,7 @@ class _LoginState extends State<Login> {
   String _generatedOtp = '';
   bool _otpVisible = false;
 
-  _verifyMobileNumber() async {
+  Future<void> _verifyMobileNumber() async {
     _otp.clear();
     _mobileNumberVerified = false;
     _generatedOtp = '';
@@ -63,7 +65,7 @@ class _LoginState extends State<Login> {
     );
   }
 
-  _verifyOtp() async {
+  Future<void> _verifyOtp() async {
     if (_formKey.currentState!.validate()) {
       if (_otp.text == _generatedOtp) {
         Snackbar.showSnackBar(context, content: "OTP verified");
@@ -225,7 +227,11 @@ class _LoginState extends State<Login> {
                     child: const Text("Resend OTP"),
                     onPressed: () => _verifyMobileNumber(),
                   )
-                ]
+                ],
+                TextButton(
+                  child: const Text("Request for new account"),
+                  onPressed: () => Navigate.route(context, const Request()),
+                )
               ],
             ),
           ),

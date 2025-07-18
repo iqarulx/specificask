@@ -50,4 +50,24 @@ class AuthService {
       throw error.toString();
     }
   }
+
+  static Future<Map<String, dynamic>> requestForNewAccount(
+      {required Map<String, dynamic> data}) async {
+    try {
+      data['request_for_new_account'] = 1;
+      final queryParameters = data;
+      final uri = Uri.parse("$_apiUrl/$_route");
+
+      final response = await http.post(uri, body: json.encode(queryParameters));
+      if (response.statusCode == 200) {
+        var data = json.decode(response.body);
+        return data;
+      } else {
+        var data = json.decode(response.body);
+        throw data['message'];
+      }
+    } catch (error) {
+      throw error.toString();
+    }
+  }
 }

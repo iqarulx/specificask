@@ -7,6 +7,7 @@ import '../../../services/api/settings_service.dart';
 import '../../../services/others/db.dart';
 import '../../../utils/route.dart';
 import '../../../utils/time_wish.dart';
+import '../../screens/profile.dart';
 import '../../screens/specific_ask_list_index.dart';
 import '/theme/theme.dart';
 import 'sidebar_option.dart';
@@ -128,6 +129,21 @@ class _ListOptionsState extends State<ListOptions> {
                           }
                         } else {
                           Navigate.route(context, const SpecificAskListIndex());
+                        }
+                      },
+                    ),
+                    const SizedBox(height: 5),
+                    SidebarOption(
+                      icon: Iconsax.user,
+                      text: "Profile",
+                      selected: widget.screen == 'profile',
+                      onTap: () {
+                        if (widget.screen == 'profile') {
+                          if (Navigator.canPop(context)) {
+                            Navigator.pop(context);
+                          }
+                        } else {
+                          Navigate.route(context, const Profile());
                         }
                       },
                     ),
