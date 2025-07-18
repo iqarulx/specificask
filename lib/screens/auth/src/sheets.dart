@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:specificask/services/api/settings_service.dart';
-import '../../model/posting_model.dart';
-import '../ui/custom_field.dart';
-import '../ui/error_display.dart';
-import '../ui/loading.dart';
-import '../ui/snackbar.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
+import '/model/model.dart';
 import '/theme/theme.dart';
 
 class Sheet {

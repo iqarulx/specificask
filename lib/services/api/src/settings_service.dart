@@ -1,10 +1,7 @@
 import 'dart:convert';
-import 'package:specificask/model/profile_model.dart';
-
-import '../../model/posting_model.dart';
-import '../others/db.dart';
-import 'config.dart';
 import 'package:http/http.dart' as http;
+import '/services/services.dart';
+import '/model/model.dart';
 
 class SettingsService {
   static final String _apiUrl = Config.apiUrl;

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:specificask/app/src/app_utils.dart';
-
-import '../../screens/ui/splash.dart';
-import '../../theme/theme.dart';
+import '/app/app.dart';
+import '/screens/screens.dart';
+import '/theme/theme.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 

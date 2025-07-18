@@ -2,15 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:intl/intl.dart';
 import 'package:shimmer/shimmer.dart';
-import 'package:specificask/screens/screens/specific_ask.dart';
-import '../../../services/api/settings_service.dart';
-import '../../../services/others/db.dart';
-import '../../../utils/route.dart';
-import '../../../utils/time_wish.dart';
-import '../../screens/profile.dart';
-import '../../screens/specific_ask_list_index.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
+import '/utils/utils.dart';
 import '/theme/theme.dart';
-import 'sidebar_option.dart';
 
 class ListOptions extends StatefulWidget {
   final String screen;

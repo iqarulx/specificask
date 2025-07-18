@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:specificask/screens/auth/sheets.dart';
-import 'package:specificask/screens/ui/loading.dart';
-import 'package:specificask/screens/ui/snackbar.dart';
-import '../../model/posting_model.dart';
-import '../../services/api/auth_service.dart';
-import '../../theme/theme.dart';
-import '../../utils/input_formats.dart';
-import '../../utils/validation.dart';
-import '../ui/assets.dart';
-import '../ui/custom_field.dart';
+import '/screens/screens.dart';
+import '/model/model.dart';
+import '/services/services.dart';
+import '/theme/theme.dart';
+import '/utils/utils.dart';
 
 class Request extends StatefulWidget {
   const Request({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import '../../../utils/logout.dart';
+import '/utils/utils.dart';
 import '/theme/theme.dart';
 
 class Logout extends StatelessWidget {

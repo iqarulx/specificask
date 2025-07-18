@@ -1,18 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:specificask/screens/ui/assets.dart';
-import 'package:specificask/services/others/db.dart';
-import 'package:specificask/utils/input_formats.dart';
-import '../../services/api/auth_service.dart';
-import '../../utils/route.dart';
-import '../../utils/validation.dart';
-import '../screens/index.dart';
-import '../ui/custom_field.dart';
-import '../ui/loading.dart';
-import '../ui/snackbar.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
+import '/utils/utils.dart';
 import '/theme/theme.dart';
-import 'request.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});

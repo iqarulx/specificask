@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import '../screens/auth/login.dart';
-import '../screens/ui/c_dialog.dart';
-import '../screens/ui/snackbar.dart';
-import '../services/others/db.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
 
 logout(context) async {
   await showDialog(

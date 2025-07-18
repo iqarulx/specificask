@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:specificask/model/user_model.dart';
-import 'package:specificask/services/api/config.dart';
+import '/model/model.dart';
+import '/services/services.dart';
 
 class AuthService {
   static final String _apiUrl = Config.apiUrl;

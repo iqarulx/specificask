@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:specificask/screens/ui/c_dialog.dart';
-import 'package:specificask/screens/ui/custom_field.dart';
-import 'package:specificask/screens/ui/snackbar.dart';
-import 'package:specificask/services/api/specific_ask_list_service.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
-
-import '../../model/specific_ask_model.dart';
-import '../../theme/theme.dart';
-import '../ui/error_display.dart';
-import '../ui/loading.dart';
-import 'specifice_ask_list_table.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
+import '/model/model.dart';
+import '/theme/theme.dart';
 
 class SpecificAskList extends StatefulWidget {
   const SpecificAskList({super.key});

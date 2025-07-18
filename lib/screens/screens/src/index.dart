@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:specificask/screens/screens/specific_ask.dart';
-import 'package:specificask/screens/ui/splash.dart';
-import 'package:specificask/services/api/settings_service.dart';
-
-import 'specific_ask_list_index.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
 
 class Index extends StatefulWidget {
   const Index({super.key});

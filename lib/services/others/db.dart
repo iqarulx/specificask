@@ -1,7 +1,6 @@
 import 'dart:convert';
-
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../model/user_model.dart';
+import '/model/model.dart';
 
 class Db {
   Db._internal();

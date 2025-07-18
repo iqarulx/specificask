@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:specificask/screens/screens/my_specific_ask_list.dart';
-import 'package:specificask/screens/screens/specific_ask_list.dart';
-
-import '../../theme/theme.dart';
-import '../sidebar/sidebar.dart';
+import '/theme/theme.dart';
+import '/screens/screens.dart';
 
 class SpecificAskListIndex extends StatefulWidget {
   const SpecificAskListIndex({super.key});

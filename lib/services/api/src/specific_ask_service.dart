@@ -1,7 +1,6 @@
 import 'dart:convert';
-
 import 'package:http/http.dart' as http;
-import 'package:specificask/services/api/config.dart';
+import '/services/services.dart';
 
 class SpecificAskService {
   static final String _apiUrl = Config.apiUrl;

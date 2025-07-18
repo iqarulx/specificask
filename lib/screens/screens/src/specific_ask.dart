@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:specificask/screens/ui/custom_field.dart';
-import 'package:specificask/screens/ui/error_display.dart';
-import 'package:specificask/screens/ui/loading.dart';
-import 'package:specificask/services/others/db.dart';
-import 'package:specificask/theme/theme.dart';
-
-import '../../services/api/specific_ask_service.dart';
-import '../sidebar/sidebar.dart';
-import '../ui/snackbar.dart';
+import '/screens/screens.dart';
+import '/services/services.dart';
+import '/theme/theme.dart';
 
 class SpecificAsk extends StatefulWidget {
   const SpecificAsk({super.key});

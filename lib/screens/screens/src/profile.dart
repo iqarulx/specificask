@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:specificask/model/profile_model.dart';
-import 'package:specificask/screens/auth/sheets.dart';
-import 'package:specificask/services/api/settings_service.dart';
-import 'package:specificask/theme/theme.dart';
-
-import '../sidebar/sidebar.dart';
-import '../ui/error_display.dart';
-import '../ui/loading.dart';
-import '../ui/snackbar.dart';
+import '/model/model.dart';
+import '/services/services.dart';
+import '/theme/theme.dart';
+import '/screens/screens.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
