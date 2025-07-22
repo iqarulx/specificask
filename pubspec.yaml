@@ -1,9 +1,9 @@
 name: specificask
-description: "A new Flutter project."
+description: "BNI Specific Ask is a simple yet powerful communication tool designed specifically for BNI (Business Network International) members and business professionals. Whether you're attending weekly BNI meetings or collaborating with fellow entrepreneurs, this app helps you stay connected and informed with ease."
 
 publish_to: "none"
 
-version: 0.0.2
+version: 0.0.3
 
 environment:
   sdk: ">=3.4.4 <4.0.0"
